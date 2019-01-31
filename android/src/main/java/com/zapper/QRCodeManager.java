@@ -74,7 +74,7 @@ public class QRCodeManager extends SimpleViewManager<ReactImageView> {
   @SuppressWarnings("deprecation")
   @Override
   public ReactImageView createViewInstance(ThemedReactContext context) {
-    mImageView = new ReactImageView(context, Fresco.newDraweeControllerBuilder(), null, mCallerContext);
+    mImageView = new ReactImageView(context, Fresco.newDraweeControllerBuilder(), mCallerContext);
 
     return mImageView;
   }

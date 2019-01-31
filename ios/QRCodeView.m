@@ -35,8 +35,8 @@
     if (![_value isEqualToString:@""]) {
         QRCodeGenerator *qr = [[QRCodeGenerator alloc] initWithString: self.value];
         qr.size = CGSizeMake([_size doubleValue], [_size doubleValue]);
-        qr.color = [CIColor colorWithRGBA:_fgColor];
-        qr.backgroundColor = [CIColor colorWithRGBA:_bgColor];
+        // qr.color = [CIColor colorWithRGBA:_fgColor];
+        // qr.backgroundColor = [CIColor colorWithRGBA:_bgColor];
         [self setImage:[qr getImage]];
     }
 }
